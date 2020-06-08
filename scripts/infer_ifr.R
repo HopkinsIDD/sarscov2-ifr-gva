@@ -16,7 +16,7 @@ redo_fit <- T
 suffix <- ifelse(last_survey, "_lastsurvey", "")  # suffix for result file names
 
 # Epi data ---------------------------------------------------------------------
-age_epidata <- read_csv("data//stratified_dgs_data.csv") 
+age_epidata <- read_csv("data/stratified_dgs_data.csv") 
 
 if (remove_EMS) {
   # Account for EMS cases and deaths separately
@@ -43,7 +43,7 @@ age_epidata <- age_epidata %>%
 
 
 # Population data --------------------------------------------------------------
-age_popdata <- read_csv("data//stratified_pop_data.csv")
+age_popdata <- read_csv("data/stratified_pop_data.csv")
 
 if (remove_EMS) {
   EMS_pop <- 4065 # from https://www.ge.ch/statistique/tel/publications/2019/informations_statistiques/autres_themes/is_etablissements_sante_01_2019.pdf [Accesed June 3 2020]
