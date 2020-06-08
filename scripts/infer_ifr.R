@@ -43,7 +43,7 @@ age_epidata <- age_epidata %>%
 
 
 # Population data --------------------------------------------------------------
-age_popdata <- read_csv("data/stratified_pop_data.csv")
+age_popdata <- read_csv("data/stratified_pop_data.csv") # data from: http://www.ge.ch/statistique/tel/domaines/01/01_01/T_01_01_8_01.xls [Accesed June 3 2020]
 
 if (remove_EMS) {
   EMS_pop <- 4065 # from https://www.ge.ch/statistique/tel/publications/2019/informations_statistiques/autres_themes/is_etablissements_sante_01_2019.pdf [Accesed June 3 2020]
