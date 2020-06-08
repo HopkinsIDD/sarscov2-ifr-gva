@@ -54,7 +54,7 @@ if (remove_EMS) {
 }
 
 #  Seroprevalence estimates ----------------------------------------------------
-prev_est_age <- read_csv("data//age-sex-week-est.csv") %>% 
+prev_est_age <- read_csv("data/age-sex-week-est.csv") %>% 
   select(-X1) %>% 
   group_by(week, age_cat, sim) %>% 
   # Aggregat over age classes
