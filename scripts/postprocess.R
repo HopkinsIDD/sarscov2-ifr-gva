@@ -7,15 +7,17 @@ source("scripts/utils.R")
 
 remove_EMS <- F     # account for deaths in nursing homes separately
 last_survey <- F    # use only last survey
-redo_fit <- T
 
 suffix <- ifelse(last_survey, "_lastsurvey", "")  # suffix for result file names
 
 # Load data setup (this is saved in the main script)
 if (remove_EMS) {
-  load("data/data_setup_with_EMS.rda")
+  load("data/ge/data_setup_with_EMS.rda")
+  # Remove population in EMS for post-stratification
+  prev_est_age$pop[prev_est_age$age_cat == "EMS"] <- 0
+  age_popdata$pop[age_popdata$age_class == "all"] <- with(age_popdata,  pop[age_class == "all"] - pop[age_class == "EMS"])
 } else {
-  load("data/data_setup.rda")
+  load("data/ge/data_setup.rda")
 }
 
 # Load restults
@@ -57,6 +59,76 @@ IFR_pvals <- IFRs %>%
                                  is.na(pval) ~ "-",
                                  T ~ format(pval, digits = 2)))
 
+IFR_stats <- 
+  # Epi data
+  age_epidata %>%
+  group_by(age_class) %>% 
+  arrange(desc(case_cumul)) %>% 
+  select(case_cumul, death_cumul) %>% 
+  slice(1) %>% ungroup() %>% 
+  # Populations by age
+  inner_join(age_popdata %>% select(age_class, pop)) %>% 
+  # Seroprevalence estimates
+  inner_join(prev_est_age %>% 
+               rename(age_class = age_cat) %>% 
+               filter(week == 5) %>% 
+               group_by(age_class) %>% 
+               summarise(sero.mean = mean(seropos),
+                         sero.025 = quantile(seropos, 0.025),
+                         sero.975 = quantile(seropos, 0.975))) %>% 
+  mutate(seropop.mean = sero.mean * pop,
+         seropop.025 = sero.025 * pop,
+         seropop.975 = sero.975 * pop) %>% 
+  # IFR estimates
+  inner_join(
+    IFRs %>% 
+      group_by(age_class) %>% 
+      mutate(ifr = ifr*1e2) %>% 
+      summarise(mean = mean(ifr),
+                q025 = quantile(ifr, 0.025),
+                q975 = quantile(ifr, 0.975))
+  ) %>% 
+  inner_join(IFR_pvals) %>% 
+  group_by(age_class) %>% 
+  mutate_at(vars(mean, q025, q975), 
+            function(x) format(x, digits = 2)) %>% 
+  mutate_at(vars(contains("seropop")), 
+            function(x) 100*round(x/100)) %>% 
+  ungroup() %>% 
+  mutate(ifr = paste0(mean, " (", q025, "-", q975, ")"),
+         seropop = paste0(format(seropop.mean, big.mark = "'"),
+                          " (", format(seropop.025, big.mark = "'"), 
+                          "-", 
+                          format(seropop.975, big.mark = "'"), ")"),
+         age_class = factor(age_class, 
+                            levels = age_classes[c(3, 1, 2, 4:length(age_classes))])) %>% 
+  arrange(age_class) %>% 
+  mutate(age_class = as.character(age_class),
+         age_class = str_replace_all(age_class, c("\\[" = "", "\\)" = "", "," = "-")),
+         pop = format(pop, big.mark = "'")) 
+
+
+IFR_pvals <- IFR_stats %>% 
+  select(age_class, seropop, death_cumul, ifr, pval_string) %>% 
+  rename(`Age class` = age_class,
+         `Estimated infected` = seropop,
+         `Deaths` = death_cumul,
+         IFR = ifr,
+         `p-value` = pval_string) 
+
+if(remove_EMS) {
+  knitr::kable(IFR_pvals,
+               format = "latex",
+               booktabs = T) %>% 
+    write(file = paste0("results/IFRs_with_EMS_pvals", suffix, ".tex"))
+  
+} else {
+  knitr::kable(IFR_pvals,
+               format = "latex",
+               booktabs = T) %>% 
+    write(file = paste0("results/IFRs_pvals", suffix, ".tex"))
+}
+
 # Plots ------------------------------------------------------------------------
 Sys.setlocale("LC_TIME", "C")
 
@@ -71,7 +143,7 @@ var_dict <- c(
   "death_incid" = "Death incidence"
 )
 
-stratified_data <- read_csv("data/stratified_dgs_data.csv")
+stratified_data <- read_csv("data/ge/stratified_dgs_data.csv")
 
 p_data <- ggplot(stratified_data, aes(x = date, y = value, color = age_class)) +
   geom_point(size = .6) +
@@ -118,7 +190,7 @@ delay_dict <- c(
   "i2s" = "Infection to symptom onset",
   "s2c" = "Onset to reporting",
   "s2sero" = "Onset to seroconversion",
-  "c2d" = "Confirmation to death",
+  "c2d" = "Reporting to death",
   "i2c" = "Infection to reporting",
   "i2sero" = "Infection to seroconversion",
   "i2d" = "Infection to death"
@@ -182,53 +254,7 @@ if (!remove_EMS) {
 
 # Table ------------------------------------------------------------------------
 
-IFR_stats <- 
-  # Epi data
-  age_epidata %>%
-  group_by(age_class) %>% 
-  arrange(desc(case_cumul)) %>% 
-  select(case_cumul, death_cumul) %>% 
-  slice(1) %>% ungroup() %>% 
-  # Populations by age
-  inner_join(age_popdata %>% select(age_class, pop)) %>% 
-  # Seroprevalence estimates
-  inner_join(prev_est_age %>% 
-               rename(age_class = age_cat) %>% 
-               filter(week == 5) %>% 
-               group_by(age_class) %>% 
-               summarise(sero.mean = mean(seropos),
-                         sero.025 = quantile(seropos, 0.025),
-                         sero.975 = quantile(seropos, 0.975))) %>% 
-  mutate(seropop.mean = sero.mean * pop,
-         seropop.025 = sero.025 * pop,
-         seropop.975 = sero.975 * pop) %>% 
-  # IFR estimates
-  inner_join(
-    IFRs %>% 
-      group_by(age_class) %>% 
-      mutate(ifr = ifr*1e2) %>% 
-      summarise(mean = mean(ifr),
-                q025 = quantile(ifr, 0.025),
-                q975 = quantile(ifr, 0.975))
-  ) %>% 
-  inner_join(IFR_pvals) %>% 
-  group_by(age_class) %>% 
-  mutate_at(vars(mean, q025, q975), 
-            function(x) format(x, digits = 2)) %>% 
-  mutate_at(vars(contains("seropop")), 
-            function(x) 100*round(x/100)) %>% 
-  ungroup() %>% 
-  mutate(ifr = paste0(mean, " (", q025, "-", q975, ")"),
-         seropop = paste0(format(seropop.mean, big.mark = "'"),
-                          " (", format(seropop.025, big.mark = "'"), 
-                          "-", 
-                          format(seropop.975, big.mark = "'"), ")"),
-         age_class = factor(age_class, 
-                            levels = age_classes[c(3, 1, 2, 4:length(age_classes))])) %>% 
-  arrange(age_class) %>% 
-  mutate(age_class = as.character(age_class),
-         age_class = str_replace_all(age_class, c("\\[" = "", "\\)" = "", "," = "-")),
-         pop = format(pop, big.mark = "'")) %>% 
+IFR_stats <- IFR_stats %>% 
   select(age_class, pop, seropop, death_cumul, ifr) %>% 
   rename(`Age class` = age_class,
          Population = pop,

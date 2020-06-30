@@ -775,8 +775,6 @@ age_class,EMS,date,var,value
 "[50,65)",1,2020-06-01,case_incid,0
 "[65, Inf)",0,2020-06-01,case_incid,0
 "[65, Inf)",1,2020-06-01,case_incid,0
-"[65, Inf)",0,NA,case_incid,1
-"[65, Inf)",1,NA,case_incid,5
 "[-Inf,5)",0,2020-02-26,death_incid,0
 "[5,10)",0,2020-02-26,death_incid,0
 "[10,20)",0,2020-02-26,death_incid,0
@@ -1032,7 +1030,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-03-28,death_incid,0
 "[50,65)",1,2020-03-28,death_incid,0
 "[65, Inf)",0,2020-03-28,death_incid,4
-"[65, Inf)",1,2020-03-28,death_incid,4
+"[65, Inf)",1,2020-03-28,death_incid,3
 "[-Inf,5)",0,2020-03-29,death_incid,0
 "[5,10)",0,2020-03-29,death_incid,0
 "[10,20)",0,2020-03-29,death_incid,0
@@ -1128,7 +1126,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-09,death_incid,0
 "[50,65)",1,2020-04-09,death_incid,0
 "[65, Inf)",0,2020-04-09,death_incid,5
-"[65, Inf)",1,2020-04-09,death_incid,4
+"[65, Inf)",1,2020-04-09,death_incid,3
 "[-Inf,5)",0,2020-04-10,death_incid,0
 "[5,10)",0,2020-04-10,death_incid,0
 "[10,20)",0,2020-04-10,death_incid,0
@@ -1272,7 +1270,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-27,death_incid,0
 "[50,65)",1,2020-04-27,death_incid,0
 "[65, Inf)",0,2020-04-27,death_incid,0
-"[65, Inf)",1,2020-04-27,death_incid,3
+"[65, Inf)",1,2020-04-27,death_incid,1
 "[-Inf,5)",0,2020-04-28,death_incid,0
 "[5,10)",0,2020-04-28,death_incid,0
 "[10,20)",0,2020-04-28,death_incid,0
@@ -1303,8 +1301,8 @@ age_class,EMS,date,var,value
 "[20,50)",0,2020-05-01,death_incid,0
 "[50,65)",0,2020-05-01,death_incid,1
 "[50,65)",1,2020-05-01,death_incid,0
-"[65, Inf)",0,2020-05-01,death_incid,1
-"[65, Inf)",1,2020-05-01,death_incid,3
+"[65, Inf)",0,2020-05-01,death_incid,0
+"[65, Inf)",1,2020-05-01,death_incid,2
 "[-Inf,5)",0,2020-05-02,death_incid,0
 "[5,10)",0,2020-05-02,death_incid,0
 "[10,20)",0,2020-05-02,death_incid,0
@@ -1553,8 +1551,6 @@ age_class,EMS,date,var,value
 "[50,65)",1,2020-06-01,death_incid,0
 "[65, Inf)",0,2020-06-01,death_incid,0
 "[65, Inf)",1,2020-06-01,death_incid,0
-"[65, Inf)",0,NA,death_incid,0
-"[65, Inf)",1,NA,death_incid,0
 "[-Inf,5)",0,2020-02-26,case_cumul,0
 "[5,10)",0,2020-02-26,case_cumul,0
 "[10,20)",0,2020-02-26,case_cumul,0
@@ -2331,8 +2327,6 @@ age_class,EMS,date,var,value
 "[50,65)",1,2020-06-01,case_cumul,11
 "[65, Inf)",0,2020-06-01,case_cumul,984
 "[65, Inf)",1,2020-06-01,case_cumul,302
-"[65, Inf)",0,NA,case_cumul,985
-"[65, Inf)",1,NA,case_cumul,307
 "[-Inf,5)",0,2020-02-26,death_cumul,0
 "[5,10)",0,2020-02-26,death_cumul,0
 "[10,20)",0,2020-02-26,death_cumul,0
@@ -2588,7 +2582,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-03-28,death_cumul,2
 "[50,65)",1,2020-03-28,death_cumul,0
 "[65, Inf)",0,2020-03-28,death_cumul,31
-"[65, Inf)",1,2020-03-28,death_cumul,8
+"[65, Inf)",1,2020-03-28,death_cumul,7
 "[-Inf,5)",0,2020-03-29,death_cumul,0
 "[5,10)",0,2020-03-29,death_cumul,0
 "[10,20)",0,2020-03-29,death_cumul,0
@@ -2596,7 +2590,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-03-29,death_cumul,4
 "[50,65)",1,2020-03-29,death_cumul,0
 "[65, Inf)",0,2020-03-29,death_cumul,36
-"[65, Inf)",1,2020-03-29,death_cumul,10
+"[65, Inf)",1,2020-03-29,death_cumul,9
 "[-Inf,5)",0,2020-03-30,death_cumul,0
 "[5,10)",0,2020-03-30,death_cumul,0
 "[10,20)",0,2020-03-30,death_cumul,0
@@ -2604,7 +2598,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-03-30,death_cumul,4
 "[50,65)",1,2020-03-30,death_cumul,0
 "[65, Inf)",0,2020-03-30,death_cumul,41
-"[65, Inf)",1,2020-03-30,death_cumul,13
+"[65, Inf)",1,2020-03-30,death_cumul,12
 "[-Inf,5)",0,2020-03-31,death_cumul,0
 "[5,10)",0,2020-03-31,death_cumul,0
 "[10,20)",0,2020-03-31,death_cumul,0
@@ -2612,7 +2606,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-03-31,death_cumul,4
 "[50,65)",1,2020-03-31,death_cumul,0
 "[65, Inf)",0,2020-03-31,death_cumul,47
-"[65, Inf)",1,2020-03-31,death_cumul,17
+"[65, Inf)",1,2020-03-31,death_cumul,16
 "[-Inf,5)",0,2020-04-01,death_cumul,0
 "[5,10)",0,2020-04-01,death_cumul,0
 "[10,20)",0,2020-04-01,death_cumul,0
@@ -2620,7 +2614,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-01,death_cumul,4
 "[50,65)",1,2020-04-01,death_cumul,0
 "[65, Inf)",0,2020-04-01,death_cumul,54
-"[65, Inf)",1,2020-04-01,death_cumul,19
+"[65, Inf)",1,2020-04-01,death_cumul,18
 "[-Inf,5)",0,2020-04-02,death_cumul,0
 "[5,10)",0,2020-04-02,death_cumul,0
 "[10,20)",0,2020-04-02,death_cumul,0
@@ -2628,7 +2622,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-02,death_cumul,4
 "[50,65)",1,2020-04-02,death_cumul,0
 "[65, Inf)",0,2020-04-02,death_cumul,60
-"[65, Inf)",1,2020-04-02,death_cumul,21
+"[65, Inf)",1,2020-04-02,death_cumul,20
 "[-Inf,5)",0,2020-04-03,death_cumul,0
 "[5,10)",0,2020-04-03,death_cumul,0
 "[10,20)",0,2020-04-03,death_cumul,0
@@ -2636,7 +2630,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-03,death_cumul,4
 "[50,65)",1,2020-04-03,death_cumul,0
 "[65, Inf)",0,2020-04-03,death_cumul,64
-"[65, Inf)",1,2020-04-03,death_cumul,24
+"[65, Inf)",1,2020-04-03,death_cumul,23
 "[-Inf,5)",0,2020-04-04,death_cumul,0
 "[5,10)",0,2020-04-04,death_cumul,0
 "[10,20)",0,2020-04-04,death_cumul,0
@@ -2644,7 +2638,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-04,death_cumul,5
 "[50,65)",1,2020-04-04,death_cumul,0
 "[65, Inf)",0,2020-04-04,death_cumul,69
-"[65, Inf)",1,2020-04-04,death_cumul,31
+"[65, Inf)",1,2020-04-04,death_cumul,30
 "[-Inf,5)",0,2020-04-05,death_cumul,0
 "[5,10)",0,2020-04-05,death_cumul,0
 "[10,20)",0,2020-04-05,death_cumul,0
@@ -2652,7 +2646,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-05,death_cumul,5
 "[50,65)",1,2020-04-05,death_cumul,0
 "[65, Inf)",0,2020-04-05,death_cumul,74
-"[65, Inf)",1,2020-04-05,death_cumul,33
+"[65, Inf)",1,2020-04-05,death_cumul,32
 "[-Inf,5)",0,2020-04-06,death_cumul,0
 "[5,10)",0,2020-04-06,death_cumul,0
 "[10,20)",0,2020-04-06,death_cumul,0
@@ -2660,7 +2654,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-06,death_cumul,5
 "[50,65)",1,2020-04-06,death_cumul,0
 "[65, Inf)",0,2020-04-06,death_cumul,81
-"[65, Inf)",1,2020-04-06,death_cumul,38
+"[65, Inf)",1,2020-04-06,death_cumul,37
 "[-Inf,5)",0,2020-04-07,death_cumul,0
 "[5,10)",0,2020-04-07,death_cumul,0
 "[10,20)",0,2020-04-07,death_cumul,0
@@ -2668,7 +2662,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-07,death_cumul,6
 "[50,65)",1,2020-04-07,death_cumul,0
 "[65, Inf)",0,2020-04-07,death_cumul,86
-"[65, Inf)",1,2020-04-07,death_cumul,43
+"[65, Inf)",1,2020-04-07,death_cumul,42
 "[-Inf,5)",0,2020-04-08,death_cumul,0
 "[5,10)",0,2020-04-08,death_cumul,0
 "[10,20)",0,2020-04-08,death_cumul,0
@@ -2676,7 +2670,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-08,death_cumul,6
 "[50,65)",1,2020-04-08,death_cumul,0
 "[65, Inf)",0,2020-04-08,death_cumul,88
-"[65, Inf)",1,2020-04-08,death_cumul,54
+"[65, Inf)",1,2020-04-08,death_cumul,53
 "[-Inf,5)",0,2020-04-09,death_cumul,0
 "[5,10)",0,2020-04-09,death_cumul,0
 "[10,20)",0,2020-04-09,death_cumul,0
@@ -2684,7 +2678,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-09,death_cumul,6
 "[50,65)",1,2020-04-09,death_cumul,0
 "[65, Inf)",0,2020-04-09,death_cumul,93
-"[65, Inf)",1,2020-04-09,death_cumul,58
+"[65, Inf)",1,2020-04-09,death_cumul,56
 "[-Inf,5)",0,2020-04-10,death_cumul,0
 "[5,10)",0,2020-04-10,death_cumul,0
 "[10,20)",0,2020-04-10,death_cumul,0
@@ -2692,7 +2686,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-10,death_cumul,6
 "[50,65)",1,2020-04-10,death_cumul,0
 "[65, Inf)",0,2020-04-10,death_cumul,97
-"[65, Inf)",1,2020-04-10,death_cumul,65
+"[65, Inf)",1,2020-04-10,death_cumul,63
 "[-Inf,5)",0,2020-04-11,death_cumul,0
 "[5,10)",0,2020-04-11,death_cumul,0
 "[10,20)",0,2020-04-11,death_cumul,0
@@ -2700,7 +2694,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-11,death_cumul,6
 "[50,65)",1,2020-04-11,death_cumul,0
 "[65, Inf)",0,2020-04-11,death_cumul,100
-"[65, Inf)",1,2020-04-11,death_cumul,70
+"[65, Inf)",1,2020-04-11,death_cumul,68
 "[-Inf,5)",0,2020-04-12,death_cumul,0
 "[5,10)",0,2020-04-12,death_cumul,0
 "[10,20)",0,2020-04-12,death_cumul,0
@@ -2708,7 +2702,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-12,death_cumul,6
 "[50,65)",1,2020-04-12,death_cumul,0
 "[65, Inf)",0,2020-04-12,death_cumul,102
-"[65, Inf)",1,2020-04-12,death_cumul,75
+"[65, Inf)",1,2020-04-12,death_cumul,73
 "[-Inf,5)",0,2020-04-13,death_cumul,0
 "[5,10)",0,2020-04-13,death_cumul,0
 "[10,20)",0,2020-04-13,death_cumul,0
@@ -2716,7 +2710,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-13,death_cumul,6
 "[50,65)",1,2020-04-13,death_cumul,0
 "[65, Inf)",0,2020-04-13,death_cumul,103
-"[65, Inf)",1,2020-04-13,death_cumul,77
+"[65, Inf)",1,2020-04-13,death_cumul,75
 "[-Inf,5)",0,2020-04-14,death_cumul,0
 "[5,10)",0,2020-04-14,death_cumul,0
 "[10,20)",0,2020-04-14,death_cumul,0
@@ -2724,7 +2718,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-14,death_cumul,7
 "[50,65)",1,2020-04-14,death_cumul,0
 "[65, Inf)",0,2020-04-14,death_cumul,104
-"[65, Inf)",1,2020-04-14,death_cumul,80
+"[65, Inf)",1,2020-04-14,death_cumul,78
 "[-Inf,5)",0,2020-04-15,death_cumul,0
 "[5,10)",0,2020-04-15,death_cumul,0
 "[10,20)",0,2020-04-15,death_cumul,0
@@ -2732,7 +2726,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-15,death_cumul,7
 "[50,65)",1,2020-04-15,death_cumul,1
 "[65, Inf)",0,2020-04-15,death_cumul,105
-"[65, Inf)",1,2020-04-15,death_cumul,84
+"[65, Inf)",1,2020-04-15,death_cumul,82
 "[-Inf,5)",0,2020-04-16,death_cumul,0
 "[5,10)",0,2020-04-16,death_cumul,0
 "[10,20)",0,2020-04-16,death_cumul,0
@@ -2740,7 +2734,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-16,death_cumul,8
 "[50,65)",1,2020-04-16,death_cumul,1
 "[65, Inf)",0,2020-04-16,death_cumul,108
-"[65, Inf)",1,2020-04-16,death_cumul,88
+"[65, Inf)",1,2020-04-16,death_cumul,86
 "[-Inf,5)",0,2020-04-17,death_cumul,0
 "[5,10)",0,2020-04-17,death_cumul,0
 "[10,20)",0,2020-04-17,death_cumul,0
@@ -2748,7 +2742,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-17,death_cumul,9
 "[50,65)",1,2020-04-17,death_cumul,1
 "[65, Inf)",0,2020-04-17,death_cumul,111
-"[65, Inf)",1,2020-04-17,death_cumul,91
+"[65, Inf)",1,2020-04-17,death_cumul,89
 "[-Inf,5)",0,2020-04-18,death_cumul,0
 "[5,10)",0,2020-04-18,death_cumul,0
 "[10,20)",0,2020-04-18,death_cumul,0
@@ -2756,7 +2750,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-18,death_cumul,9
 "[50,65)",1,2020-04-18,death_cumul,1
 "[65, Inf)",0,2020-04-18,death_cumul,112
-"[65, Inf)",1,2020-04-18,death_cumul,94
+"[65, Inf)",1,2020-04-18,death_cumul,92
 "[-Inf,5)",0,2020-04-19,death_cumul,0
 "[5,10)",0,2020-04-19,death_cumul,0
 "[10,20)",0,2020-04-19,death_cumul,0
@@ -2764,7 +2758,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-19,death_cumul,9
 "[50,65)",1,2020-04-19,death_cumul,1
 "[65, Inf)",0,2020-04-19,death_cumul,113
-"[65, Inf)",1,2020-04-19,death_cumul,96
+"[65, Inf)",1,2020-04-19,death_cumul,94
 "[-Inf,5)",0,2020-04-20,death_cumul,0
 "[5,10)",0,2020-04-20,death_cumul,0
 "[10,20)",0,2020-04-20,death_cumul,0
@@ -2772,7 +2766,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-20,death_cumul,9
 "[50,65)",1,2020-04-20,death_cumul,1
 "[65, Inf)",0,2020-04-20,death_cumul,115
-"[65, Inf)",1,2020-04-20,death_cumul,98
+"[65, Inf)",1,2020-04-20,death_cumul,96
 "[-Inf,5)",0,2020-04-21,death_cumul,0
 "[5,10)",0,2020-04-21,death_cumul,0
 "[10,20)",0,2020-04-21,death_cumul,0
@@ -2780,7 +2774,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-21,death_cumul,9
 "[50,65)",1,2020-04-21,death_cumul,1
 "[65, Inf)",0,2020-04-21,death_cumul,115
-"[65, Inf)",1,2020-04-21,death_cumul,103
+"[65, Inf)",1,2020-04-21,death_cumul,101
 "[-Inf,5)",0,2020-04-22,death_cumul,0
 "[5,10)",0,2020-04-22,death_cumul,0
 "[10,20)",0,2020-04-22,death_cumul,0
@@ -2788,7 +2782,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-22,death_cumul,9
 "[50,65)",1,2020-04-22,death_cumul,1
 "[65, Inf)",0,2020-04-22,death_cumul,118
-"[65, Inf)",1,2020-04-22,death_cumul,106
+"[65, Inf)",1,2020-04-22,death_cumul,104
 "[-Inf,5)",0,2020-04-23,death_cumul,0
 "[5,10)",0,2020-04-23,death_cumul,0
 "[10,20)",0,2020-04-23,death_cumul,0
@@ -2796,7 +2790,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-23,death_cumul,9
 "[50,65)",1,2020-04-23,death_cumul,1
 "[65, Inf)",0,2020-04-23,death_cumul,120
-"[65, Inf)",1,2020-04-23,death_cumul,107
+"[65, Inf)",1,2020-04-23,death_cumul,105
 "[-Inf,5)",0,2020-04-24,death_cumul,0
 "[5,10)",0,2020-04-24,death_cumul,0
 "[10,20)",0,2020-04-24,death_cumul,0
@@ -2804,7 +2798,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-24,death_cumul,9
 "[50,65)",1,2020-04-24,death_cumul,1
 "[65, Inf)",0,2020-04-24,death_cumul,124
-"[65, Inf)",1,2020-04-24,death_cumul,109
+"[65, Inf)",1,2020-04-24,death_cumul,107
 "[-Inf,5)",0,2020-04-25,death_cumul,0
 "[5,10)",0,2020-04-25,death_cumul,0
 "[10,20)",0,2020-04-25,death_cumul,0
@@ -2812,7 +2806,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-25,death_cumul,10
 "[50,65)",1,2020-04-25,death_cumul,1
 "[65, Inf)",0,2020-04-25,death_cumul,125
-"[65, Inf)",1,2020-04-25,death_cumul,109
+"[65, Inf)",1,2020-04-25,death_cumul,107
 "[-Inf,5)",0,2020-04-26,death_cumul,0
 "[5,10)",0,2020-04-26,death_cumul,0
 "[10,20)",0,2020-04-26,death_cumul,0
@@ -2820,7 +2814,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-26,death_cumul,10
 "[50,65)",1,2020-04-26,death_cumul,1
 "[65, Inf)",0,2020-04-26,death_cumul,126
-"[65, Inf)",1,2020-04-26,death_cumul,110
+"[65, Inf)",1,2020-04-26,death_cumul,108
 "[-Inf,5)",0,2020-04-27,death_cumul,0
 "[5,10)",0,2020-04-27,death_cumul,0
 "[10,20)",0,2020-04-27,death_cumul,0
@@ -2828,7 +2822,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-27,death_cumul,10
 "[50,65)",1,2020-04-27,death_cumul,1
 "[65, Inf)",0,2020-04-27,death_cumul,126
-"[65, Inf)",1,2020-04-27,death_cumul,113
+"[65, Inf)",1,2020-04-27,death_cumul,109
 "[-Inf,5)",0,2020-04-28,death_cumul,0
 "[5,10)",0,2020-04-28,death_cumul,0
 "[10,20)",0,2020-04-28,death_cumul,0
@@ -2836,7 +2830,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-28,death_cumul,10
 "[50,65)",1,2020-04-28,death_cumul,1
 "[65, Inf)",0,2020-04-28,death_cumul,126
-"[65, Inf)",1,2020-04-28,death_cumul,114
+"[65, Inf)",1,2020-04-28,death_cumul,110
 "[-Inf,5)",0,2020-04-29,death_cumul,0
 "[5,10)",0,2020-04-29,death_cumul,0
 "[10,20)",0,2020-04-29,death_cumul,0
@@ -2844,7 +2838,7 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-29,death_cumul,10
 "[50,65)",1,2020-04-29,death_cumul,1
 "[65, Inf)",0,2020-04-29,death_cumul,126
-"[65, Inf)",1,2020-04-29,death_cumul,115
+"[65, Inf)",1,2020-04-29,death_cumul,111
 "[-Inf,5)",0,2020-04-30,death_cumul,0
 "[5,10)",0,2020-04-30,death_cumul,0
 "[10,20)",0,2020-04-30,death_cumul,0
@@ -2852,262 +2846,260 @@ age_class,EMS,date,var,value
 "[50,65)",0,2020-04-30,death_cumul,10
 "[50,65)",1,2020-04-30,death_cumul,1
 "[65, Inf)",0,2020-04-30,death_cumul,127
-"[65, Inf)",1,2020-04-30,death_cumul,117
+"[65, Inf)",1,2020-04-30,death_cumul,113
 "[-Inf,5)",0,2020-05-01,death_cumul,0
 "[5,10)",0,2020-05-01,death_cumul,0
 "[10,20)",0,2020-05-01,death_cumul,0
 "[20,50)",0,2020-05-01,death_cumul,2
 "[50,65)",0,2020-05-01,death_cumul,11
 "[50,65)",1,2020-05-01,death_cumul,1
-"[65, Inf)",0,2020-05-01,death_cumul,128
-"[65, Inf)",1,2020-05-01,death_cumul,120
+"[65, Inf)",0,2020-05-01,death_cumul,127
+"[65, Inf)",1,2020-05-01,death_cumul,115
 "[-Inf,5)",0,2020-05-02,death_cumul,0
 "[5,10)",0,2020-05-02,death_cumul,0
 "[10,20)",0,2020-05-02,death_cumul,0
 "[20,50)",0,2020-05-02,death_cumul,2
 "[50,65)",0,2020-05-02,death_cumul,11
 "[50,65)",1,2020-05-02,death_cumul,1
-"[65, Inf)",0,2020-05-02,death_cumul,130
-"[65, Inf)",1,2020-05-02,death_cumul,121
+"[65, Inf)",0,2020-05-02,death_cumul,129
+"[65, Inf)",1,2020-05-02,death_cumul,116
 "[-Inf,5)",0,2020-05-03,death_cumul,0
 "[5,10)",0,2020-05-03,death_cumul,0
 "[10,20)",0,2020-05-03,death_cumul,0
 "[20,50)",0,2020-05-03,death_cumul,2
 "[50,65)",0,2020-05-03,death_cumul,11
 "[50,65)",1,2020-05-03,death_cumul,1
-"[65, Inf)",0,2020-05-03,death_cumul,131
-"[65, Inf)",1,2020-05-03,death_cumul,121
+"[65, Inf)",0,2020-05-03,death_cumul,130
+"[65, Inf)",1,2020-05-03,death_cumul,116
 "[-Inf,5)",0,2020-05-04,death_cumul,0
 "[5,10)",0,2020-05-04,death_cumul,0
 "[10,20)",0,2020-05-04,death_cumul,0
 "[20,50)",0,2020-05-04,death_cumul,2
 "[50,65)",0,2020-05-04,death_cumul,11
 "[50,65)",1,2020-05-04,death_cumul,1
-"[65, Inf)",0,2020-05-04,death_cumul,131
-"[65, Inf)",1,2020-05-04,death_cumul,123
+"[65, Inf)",0,2020-05-04,death_cumul,130
+"[65, Inf)",1,2020-05-04,death_cumul,118
 "[-Inf,5)",0,2020-05-05,death_cumul,0
 "[5,10)",0,2020-05-05,death_cumul,0
 "[10,20)",0,2020-05-05,death_cumul,0
 "[20,50)",0,2020-05-05,death_cumul,2
 "[50,65)",0,2020-05-05,death_cumul,11
 "[50,65)",1,2020-05-05,death_cumul,1
-"[65, Inf)",0,2020-05-05,death_cumul,131
-"[65, Inf)",1,2020-05-05,death_cumul,124
+"[65, Inf)",0,2020-05-05,death_cumul,130
+"[65, Inf)",1,2020-05-05,death_cumul,119
 "[-Inf,5)",0,2020-05-06,death_cumul,0
 "[5,10)",0,2020-05-06,death_cumul,0
 "[10,20)",0,2020-05-06,death_cumul,0
 "[20,50)",0,2020-05-06,death_cumul,2
 "[50,65)",0,2020-05-06,death_cumul,12
 "[50,65)",1,2020-05-06,death_cumul,1
-"[65, Inf)",0,2020-05-06,death_cumul,131
-"[65, Inf)",1,2020-05-06,death_cumul,124
+"[65, Inf)",0,2020-05-06,death_cumul,130
+"[65, Inf)",1,2020-05-06,death_cumul,119
 "[-Inf,5)",0,2020-05-07,death_cumul,0
 "[5,10)",0,2020-05-07,death_cumul,0
 "[10,20)",0,2020-05-07,death_cumul,0
 "[20,50)",0,2020-05-07,death_cumul,2
 "[50,65)",0,2020-05-07,death_cumul,13
 "[50,65)",1,2020-05-07,death_cumul,1
-"[65, Inf)",0,2020-05-07,death_cumul,134
-"[65, Inf)",1,2020-05-07,death_cumul,125
+"[65, Inf)",0,2020-05-07,death_cumul,133
+"[65, Inf)",1,2020-05-07,death_cumul,120
 "[-Inf,5)",0,2020-05-08,death_cumul,0
 "[5,10)",0,2020-05-08,death_cumul,0
 "[10,20)",0,2020-05-08,death_cumul,0
 "[20,50)",0,2020-05-08,death_cumul,2
 "[50,65)",0,2020-05-08,death_cumul,13
 "[50,65)",1,2020-05-08,death_cumul,1
-"[65, Inf)",0,2020-05-08,death_cumul,134
-"[65, Inf)",1,2020-05-08,death_cumul,125
+"[65, Inf)",0,2020-05-08,death_cumul,133
+"[65, Inf)",1,2020-05-08,death_cumul,120
 "[-Inf,5)",0,2020-05-09,death_cumul,0
 "[5,10)",0,2020-05-09,death_cumul,0
 "[10,20)",0,2020-05-09,death_cumul,0
 "[20,50)",0,2020-05-09,death_cumul,2
 "[50,65)",0,2020-05-09,death_cumul,13
 "[50,65)",1,2020-05-09,death_cumul,1
-"[65, Inf)",0,2020-05-09,death_cumul,134
-"[65, Inf)",1,2020-05-09,death_cumul,127
+"[65, Inf)",0,2020-05-09,death_cumul,133
+"[65, Inf)",1,2020-05-09,death_cumul,122
 "[-Inf,5)",0,2020-05-10,death_cumul,0
 "[5,10)",0,2020-05-10,death_cumul,0
 "[10,20)",0,2020-05-10,death_cumul,0
 "[20,50)",0,2020-05-10,death_cumul,2
 "[50,65)",0,2020-05-10,death_cumul,14
 "[50,65)",1,2020-05-10,death_cumul,1
-"[65, Inf)",0,2020-05-10,death_cumul,134
-"[65, Inf)",1,2020-05-10,death_cumul,128
+"[65, Inf)",0,2020-05-10,death_cumul,133
+"[65, Inf)",1,2020-05-10,death_cumul,123
 "[-Inf,5)",0,2020-05-11,death_cumul,0
 "[5,10)",0,2020-05-11,death_cumul,0
 "[10,20)",0,2020-05-11,death_cumul,0
 "[20,50)",0,2020-05-11,death_cumul,2
 "[50,65)",0,2020-05-11,death_cumul,14
 "[50,65)",1,2020-05-11,death_cumul,1
-"[65, Inf)",0,2020-05-11,death_cumul,134
-"[65, Inf)",1,2020-05-11,death_cumul,128
+"[65, Inf)",0,2020-05-11,death_cumul,133
+"[65, Inf)",1,2020-05-11,death_cumul,123
 "[-Inf,5)",0,2020-05-12,death_cumul,0
 "[5,10)",0,2020-05-12,death_cumul,0
 "[10,20)",0,2020-05-12,death_cumul,0
 "[20,50)",0,2020-05-12,death_cumul,2
 "[50,65)",0,2020-05-12,death_cumul,14
 "[50,65)",1,2020-05-12,death_cumul,1
-"[65, Inf)",0,2020-05-12,death_cumul,134
-"[65, Inf)",1,2020-05-12,death_cumul,129
+"[65, Inf)",0,2020-05-12,death_cumul,133
+"[65, Inf)",1,2020-05-12,death_cumul,124
 "[-Inf,5)",0,2020-05-13,death_cumul,0
 "[5,10)",0,2020-05-13,death_cumul,0
 "[10,20)",0,2020-05-13,death_cumul,0
 "[20,50)",0,2020-05-13,death_cumul,2
 "[50,65)",0,2020-05-13,death_cumul,14
 "[50,65)",1,2020-05-13,death_cumul,1
-"[65, Inf)",0,2020-05-13,death_cumul,134
-"[65, Inf)",1,2020-05-13,death_cumul,130
+"[65, Inf)",0,2020-05-13,death_cumul,133
+"[65, Inf)",1,2020-05-13,death_cumul,125
 "[-Inf,5)",0,2020-05-14,death_cumul,0
 "[5,10)",0,2020-05-14,death_cumul,0
 "[10,20)",0,2020-05-14,death_cumul,0
 "[20,50)",0,2020-05-14,death_cumul,2
 "[50,65)",0,2020-05-14,death_cumul,14
 "[50,65)",1,2020-05-14,death_cumul,1
-"[65, Inf)",0,2020-05-14,death_cumul,134
-"[65, Inf)",1,2020-05-14,death_cumul,130
+"[65, Inf)",0,2020-05-14,death_cumul,133
+"[65, Inf)",1,2020-05-14,death_cumul,125
 "[-Inf,5)",0,2020-05-15,death_cumul,0
 "[5,10)",0,2020-05-15,death_cumul,0
 "[10,20)",0,2020-05-15,death_cumul,0
 "[20,50)",0,2020-05-15,death_cumul,2
 "[50,65)",0,2020-05-15,death_cumul,14
 "[50,65)",1,2020-05-15,death_cumul,1
-"[65, Inf)",0,2020-05-15,death_cumul,134
-"[65, Inf)",1,2020-05-15,death_cumul,130
+"[65, Inf)",0,2020-05-15,death_cumul,133
+"[65, Inf)",1,2020-05-15,death_cumul,125
 "[-Inf,5)",0,2020-05-16,death_cumul,0
 "[5,10)",0,2020-05-16,death_cumul,0
 "[10,20)",0,2020-05-16,death_cumul,0
 "[20,50)",0,2020-05-16,death_cumul,2
 "[50,65)",0,2020-05-16,death_cumul,14
 "[50,65)",1,2020-05-16,death_cumul,1
-"[65, Inf)",0,2020-05-16,death_cumul,134
-"[65, Inf)",1,2020-05-16,death_cumul,130
+"[65, Inf)",0,2020-05-16,death_cumul,133
+"[65, Inf)",1,2020-05-16,death_cumul,125
 "[-Inf,5)",0,2020-05-17,death_cumul,0
 "[5,10)",0,2020-05-17,death_cumul,0
 "[10,20)",0,2020-05-17,death_cumul,0
 "[20,50)",0,2020-05-17,death_cumul,2
 "[50,65)",0,2020-05-17,death_cumul,14
 "[50,65)",1,2020-05-17,death_cumul,1
-"[65, Inf)",0,2020-05-17,death_cumul,134
-"[65, Inf)",1,2020-05-17,death_cumul,132
+"[65, Inf)",0,2020-05-17,death_cumul,133
+"[65, Inf)",1,2020-05-17,death_cumul,127
 "[-Inf,5)",0,2020-05-18,death_cumul,0
 "[5,10)",0,2020-05-18,death_cumul,0
 "[10,20)",0,2020-05-18,death_cumul,0
 "[20,50)",0,2020-05-18,death_cumul,2
 "[50,65)",0,2020-05-18,death_cumul,14
 "[50,65)",1,2020-05-18,death_cumul,1
-"[65, Inf)",0,2020-05-18,death_cumul,134
-"[65, Inf)",1,2020-05-18,death_cumul,133
+"[65, Inf)",0,2020-05-18,death_cumul,133
+"[65, Inf)",1,2020-05-18,death_cumul,128
 "[-Inf,5)",0,2020-05-19,death_cumul,0
 "[5,10)",0,2020-05-19,death_cumul,0
 "[10,20)",0,2020-05-19,death_cumul,0
 "[20,50)",0,2020-05-19,death_cumul,2
 "[50,65)",0,2020-05-19,death_cumul,14
 "[50,65)",1,2020-05-19,death_cumul,1
-"[65, Inf)",0,2020-05-19,death_cumul,134
-"[65, Inf)",1,2020-05-19,death_cumul,133
+"[65, Inf)",0,2020-05-19,death_cumul,133
+"[65, Inf)",1,2020-05-19,death_cumul,128
 "[-Inf,5)",0,2020-05-20,death_cumul,0
 "[5,10)",0,2020-05-20,death_cumul,0
 "[10,20)",0,2020-05-20,death_cumul,0
 "[20,50)",0,2020-05-20,death_cumul,2
 "[50,65)",0,2020-05-20,death_cumul,14
 "[50,65)",1,2020-05-20,death_cumul,1
-"[65, Inf)",0,2020-05-20,death_cumul,134
-"[65, Inf)",1,2020-05-20,death_cumul,133
+"[65, Inf)",0,2020-05-20,death_cumul,133
+"[65, Inf)",1,2020-05-20,death_cumul,128
 "[-Inf,5)",0,2020-05-21,death_cumul,0
 "[5,10)",0,2020-05-21,death_cumul,0
 "[10,20)",0,2020-05-21,death_cumul,0
 "[20,50)",0,2020-05-21,death_cumul,2
 "[50,65)",0,2020-05-21,death_cumul,14
 "[50,65)",1,2020-05-21,death_cumul,1
-"[65, Inf)",0,2020-05-21,death_cumul,135
-"[65, Inf)",1,2020-05-21,death_cumul,133
+"[65, Inf)",0,2020-05-21,death_cumul,134
+"[65, Inf)",1,2020-05-21,death_cumul,128
 "[-Inf,5)",0,2020-05-22,death_cumul,0
 "[5,10)",0,2020-05-22,death_cumul,0
 "[10,20)",0,2020-05-22,death_cumul,0
 "[20,50)",0,2020-05-22,death_cumul,2
 "[50,65)",0,2020-05-22,death_cumul,14
 "[50,65)",1,2020-05-22,death_cumul,1
-"[65, Inf)",0,2020-05-22,death_cumul,135
-"[65, Inf)",1,2020-05-22,death_cumul,133
+"[65, Inf)",0,2020-05-22,death_cumul,134
+"[65, Inf)",1,2020-05-22,death_cumul,128
 "[-Inf,5)",0,2020-05-23,death_cumul,0
 "[5,10)",0,2020-05-23,death_cumul,0
 "[10,20)",0,2020-05-23,death_cumul,0
 "[20,50)",0,2020-05-23,death_cumul,2
 "[50,65)",0,2020-05-23,death_cumul,14
 "[50,65)",1,2020-05-23,death_cumul,1
-"[65, Inf)",0,2020-05-23,death_cumul,135
-"[65, Inf)",1,2020-05-23,death_cumul,133
+"[65, Inf)",0,2020-05-23,death_cumul,134
+"[65, Inf)",1,2020-05-23,death_cumul,128
 "[-Inf,5)",0,2020-05-24,death_cumul,0
 "[5,10)",0,2020-05-24,death_cumul,0
 "[10,20)",0,2020-05-24,death_cumul,0
 "[20,50)",0,2020-05-24,death_cumul,2
 "[50,65)",0,2020-05-24,death_cumul,14
 "[50,65)",1,2020-05-24,death_cumul,1
-"[65, Inf)",0,2020-05-24,death_cumul,135
-"[65, Inf)",1,2020-05-24,death_cumul,133
+"[65, Inf)",0,2020-05-24,death_cumul,134
+"[65, Inf)",1,2020-05-24,death_cumul,128
 "[-Inf,5)",0,2020-05-25,death_cumul,0
 "[5,10)",0,2020-05-25,death_cumul,0
 "[10,20)",0,2020-05-25,death_cumul,0
 "[20,50)",0,2020-05-25,death_cumul,2
 "[50,65)",0,2020-05-25,death_cumul,15
 "[50,65)",1,2020-05-25,death_cumul,1
-"[65, Inf)",0,2020-05-25,death_cumul,135
-"[65, Inf)",1,2020-05-25,death_cumul,133
+"[65, Inf)",0,2020-05-25,death_cumul,134
+"[65, Inf)",1,2020-05-25,death_cumul,128
 "[-Inf,5)",0,2020-05-26,death_cumul,0
 "[5,10)",0,2020-05-26,death_cumul,0
 "[10,20)",0,2020-05-26,death_cumul,0
 "[20,50)",0,2020-05-26,death_cumul,2
 "[50,65)",0,2020-05-26,death_cumul,15
 "[50,65)",1,2020-05-26,death_cumul,1
-"[65, Inf)",0,2020-05-26,death_cumul,135
-"[65, Inf)",1,2020-05-26,death_cumul,133
+"[65, Inf)",0,2020-05-26,death_cumul,134
+"[65, Inf)",1,2020-05-26,death_cumul,128
 "[-Inf,5)",0,2020-05-27,death_cumul,0
 "[5,10)",0,2020-05-27,death_cumul,0
 "[10,20)",0,2020-05-27,death_cumul,0
 "[20,50)",0,2020-05-27,death_cumul,2
 "[50,65)",0,2020-05-27,death_cumul,15
 "[50,65)",1,2020-05-27,death_cumul,1
-"[65, Inf)",0,2020-05-27,death_cumul,135
-"[65, Inf)",1,2020-05-27,death_cumul,133
+"[65, Inf)",0,2020-05-27,death_cumul,134
+"[65, Inf)",1,2020-05-27,death_cumul,128
 "[-Inf,5)",0,2020-05-28,death_cumul,0
 "[5,10)",0,2020-05-28,death_cumul,0
 "[10,20)",0,2020-05-28,death_cumul,0
 "[20,50)",0,2020-05-28,death_cumul,2
 "[50,65)",0,2020-05-28,death_cumul,15
 "[50,65)",1,2020-05-28,death_cumul,1
-"[65, Inf)",0,2020-05-28,death_cumul,135
-"[65, Inf)",1,2020-05-28,death_cumul,133
+"[65, Inf)",0,2020-05-28,death_cumul,134
+"[65, Inf)",1,2020-05-28,death_cumul,128
 "[-Inf,5)",0,2020-05-29,death_cumul,0
 "[5,10)",0,2020-05-29,death_cumul,0
 "[10,20)",0,2020-05-29,death_cumul,0
 "[20,50)",0,2020-05-29,death_cumul,2
 "[50,65)",0,2020-05-29,death_cumul,15
 "[50,65)",1,2020-05-29,death_cumul,1
-"[65, Inf)",0,2020-05-29,death_cumul,135
-"[65, Inf)",1,2020-05-29,death_cumul,133
+"[65, Inf)",0,2020-05-29,death_cumul,134
+"[65, Inf)",1,2020-05-29,death_cumul,128
 "[-Inf,5)",0,2020-05-30,death_cumul,0
 "[5,10)",0,2020-05-30,death_cumul,0
 "[10,20)",0,2020-05-30,death_cumul,0
 "[20,50)",0,2020-05-30,death_cumul,2
 "[50,65)",0,2020-05-30,death_cumul,15
 "[50,65)",1,2020-05-30,death_cumul,1
-"[65, Inf)",0,2020-05-30,death_cumul,135
-"[65, Inf)",1,2020-05-30,death_cumul,133
+"[65, Inf)",0,2020-05-30,death_cumul,134
+"[65, Inf)",1,2020-05-30,death_cumul,128
 "[-Inf,5)",0,2020-05-31,death_cumul,0
 "[5,10)",0,2020-05-31,death_cumul,0
 "[10,20)",0,2020-05-31,death_cumul,0
 "[20,50)",0,2020-05-31,death_cumul,2
 "[50,65)",0,2020-05-31,death_cumul,15
 "[50,65)",1,2020-05-31,death_cumul,1
-"[65, Inf)",0,2020-05-31,death_cumul,135
-"[65, Inf)",1,2020-05-31,death_cumul,133
+"[65, Inf)",0,2020-05-31,death_cumul,134
+"[65, Inf)",1,2020-05-31,death_cumul,128
 "[-Inf,5)",0,2020-06-01,death_cumul,0
 "[5,10)",0,2020-06-01,death_cumul,0
 "[10,20)",0,2020-06-01,death_cumul,0
 "[20,50)",0,2020-06-01,death_cumul,2
 "[50,65)",0,2020-06-01,death_cumul,15
 "[50,65)",1,2020-06-01,death_cumul,1
-"[65, Inf)",0,2020-06-01,death_cumul,135
-"[65, Inf)",1,2020-06-01,death_cumul,133
-"[65, Inf)",0,NA,death_cumul,135
-"[65, Inf)",1,NA,death_cumul,133
+"[65, Inf)",0,2020-06-01,death_cumul,134
+"[65, Inf)",1,2020-06-01,death_cumul,128
